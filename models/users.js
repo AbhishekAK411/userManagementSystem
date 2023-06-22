@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { Schema } from "mongoose";
 
-const users = new Schema({
+const user = new Schema({
     username :{
         type : String,
         required : true
@@ -16,4 +16,4 @@ const users = new Schema({
     }
 });
 
-export default mongoose.model("Users", users);
+export default mongoose.model("Users", user);
